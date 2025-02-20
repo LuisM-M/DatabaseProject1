@@ -1,3 +1,5 @@
 dbenv/
 
 .DS_Store
+
+db.php
