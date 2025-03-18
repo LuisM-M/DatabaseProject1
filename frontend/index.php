@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the College Database Homeslice</h1>
+    <h1>Welcome to the College Database Homeslice. BRUH</h1>
     <nav>
         <a href="courses.php">View Courses</a>
         <a href="students.php">View Students</a>
