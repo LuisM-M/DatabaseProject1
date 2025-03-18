@@ -12,6 +12,7 @@
     <nav>
         <a href="courses.php">View Courses</a>
         <a href="students.php">View Students</a>
+        <a href="testCourses.php">View Test</a>
     </nav>
 </body>
 </html>
