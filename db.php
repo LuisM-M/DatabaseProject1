@@ -1,8 +1,8 @@
 <?php
 
-    require_once 'vendor/autoload.php';
+    // require_once 'vendor/autoload.php';
 
-    Dotenv\Dotenv::createImmutable(__DIR__)->load();
+    // Dotenv\Dotenv::createImmutable(__DIR__)->load();
 
     $host = getenv("DB_HOST");
     $username = getenv("DB_USER");
