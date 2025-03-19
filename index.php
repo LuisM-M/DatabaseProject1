@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the College Database Homeslice. BRUH</h1>
+    <h1>Welcome to the College Database</h1>
     <nav>
-        <a href="courses.php">View Courses</a>
-        <a href="students.php">View Students</a>
-        <a href="testCourses.php">View Test</a>
+        <a href="view_courses.php">View Courses</a>
+        <a href="view_students.php">View Students</a>
+        <a href="add_student.php">Add Student</a>
+        <a href="enroll_student.php">Enroll Student in Course</a>
+        <a href="course_statistics.php">Course Enrollment Statistics</a>
+        <a href="quit.php">Quit</a>
     </nav>
 </body>
 </html>
