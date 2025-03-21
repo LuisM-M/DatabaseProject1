@@ -29,7 +29,7 @@ for department_id in range( 1, NUM_DEPARTMENTS + 1 ):
 
 
 
-# Generate instructors ####################
+#################### generate instructors ####################
 instructors = []
 unique_instructor_ids = set()
 
@@ -70,7 +70,7 @@ for course_id in range( 1, NUM_COURSES + 1 ):
 
     courses.append( (course_id, title, credits, department_id, instructor_id) )
 
-# Generate students
+# generate students for student table
 students = []
 unique_student_ids = set()
 
@@ -84,7 +84,7 @@ for student_id in range( 1, NUM_STUDENTS + 1 ):
     enrollment_year = random.randint( 2020, 2025 )
     students.append( (student_id, name, email, enrollment_year) )
 
-# Generate enrollments
+# Generate enrollments for the table
 enrollments = []
 unique_enrollment_pairs = set()
 
@@ -99,6 +99,7 @@ for _ in range(NUM_ENROLLMENTS):
         enrollment_pair = ( student_id, course_id )
 
     unique_enrollment_pairs.add( enrollment_pair )
+    # For now i will be using the start date as 2 years ago
 
     enrollment_date = fake.date_between( start_date="-2y", end_date="today" )
     grade = random.choice([ "A", "B", "C", "D", "F", "Q" ])  # adding q for q drop as well
