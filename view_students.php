@@ -11,19 +11,23 @@
     <h1>Students</h1>
     <table>
         <thead>
+
             <tr>
                 <th>Student ID</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Enrollment Year</th>
             </tr>
+
         </thead>
+
         <tbody>
             <?php
             $sql = "SELECT * FROM Students";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
+                // loop and display each student
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr>
                             <td>{$row['student_id']}</td>
@@ -33,10 +37,12 @@
                           </tr>";
                 }
             } else {
+                ////////////// error message
                 echo "<tr><td colspan='4'>No students found.</td></tr>";
             }
             ?>
         </tbody>
+
     </table>
     <a href="index.php">Back to Home</a>
 </body>
