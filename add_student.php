@@ -10,6 +10,7 @@
 <body>
     <h1>Add Student</h1>
     <form action="add_student_process.php" method="POST">
+        <!-- formfields for adding student -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         
@@ -18,6 +19,8 @@
         
         <label for="enrollment_year">Enrollment Year:</label>
         <input type="number" id="enrollment_year" name="enrollment_year" required>
+
+        <!-- all attributes are required and have to follow a certain format -->
         
         <button type="submit">Add Student</button>
     </form>
