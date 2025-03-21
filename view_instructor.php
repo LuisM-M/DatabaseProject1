@@ -14,11 +14,12 @@
         <select id="instructor_id" name="instructor_id" required>
             <option value="">-- Select Instructor --</option>
             <?php
-            // Retrieve all instructors from the database
+            // retrieving instructors from the database
+            
             $sql = "SELECT instructor_id, name FROM Instructors";
             $result = $conn->query($sql);
 
-            // Populate the dropdown with instructor names
+            // Populate the dropdown with instructor names ##############
             while ($row = $result->fetch_assoc()) {
                 echo "<option value='{$row['instructor_id']}'>{$row['name']}</option>";
             }

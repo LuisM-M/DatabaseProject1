@@ -19,13 +19,13 @@
                 JOIN Departments d ON i.department_id = d.department_id
                 LEFT JOIN Courses c ON i.instructor_id = c.instructor_id
                 WHERE i.instructor_id = $instructor_id";
-                
+
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            echo "<h2>Instructor: {$row['name']}</h2>"; // First 'name' column (instructor's name)
-            echo "<p><strong>Department:</strong> {$row['name']}</p>"; // Second 'name' column (department's name)
+            echo "<h2>Instructor: {$row['name']}</h2>"; // First 'name' colum
+            echo "<p><strong>Department:</strong> {$row['name']}</p>"; // 
 
             // Display courses taught by the instructor
             echo "<h3>Courses Taught:</h3>";
