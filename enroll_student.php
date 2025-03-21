@@ -17,6 +17,7 @@
             $sql = "SELECT * FROM Students";
             $result = $conn->query($sql);
             
+            // displaying each student into a dropdown
             while($row = $result->fetch_assoc()) {
                 echo "<option value='{$row['student_id']}'>{$row['name']}</option>";
             }
@@ -30,12 +31,14 @@
             $sql = "SELECT * FROM Courses";
             $result = $conn->query($sql);
             
+            // displaying each course into a dropdown ////////////
             while($row = $result->fetch_assoc()) {
                 echo "<option value='{$row['course_id']}'>{$row['title']}</option>";
             }
             ?>
         </select>
         
+        <!-- submit button to enroll the student -->
         <button type="submit">Enroll Student</button>
     </form>
     <a href="index.php">Back to Home</a>
