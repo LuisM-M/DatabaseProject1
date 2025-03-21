@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css"> 
 </head> 
 <body> 
-    <h1>Welcome to the College Database</h1> 
+    <h1>Welcome to the Mexico City College Database</h1> 
     <nav> 
         <!-- View elements -->
         <a href="view_courses.php">View Courses</a> 
@@ -21,6 +21,8 @@
         
         <!-- more complex feature -->
         <a href="course_statistics.php">Course Enrollment Statistics</a> 
+
+        <a href="view_instructor.php">View Instructor Details</a>
         
         <!-- quit Feature -->
         <a href="quit.php">Quit</a> 

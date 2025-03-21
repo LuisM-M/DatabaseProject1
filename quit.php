@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Goodbye!</h1>
-    <p>You have exited the application.</p>
+    <p>We hope to see you soon on campus!</p>
 </body>
 </html>
